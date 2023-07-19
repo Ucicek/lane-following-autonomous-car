@@ -38,7 +38,8 @@ The controller also introduces the concept of "sleeping" the motors based on the
 
 ## Running the Project
 1. Compile the C++ module using pybind11.
-2. Run the `controller.py` script.
+2. Pip install -r requirements.txt
+3. Run the `controller.py` script.
 
 For more information on the PID controller and tuning its parameters, please refer to the comments and documentation within `controller.py`.
 
