@@ -5,8 +5,8 @@ This project implements a self-driving vehicle control system using a combinatio
 - [Demo](#Demo)
 - [Lane Detection](#lane-detection)
 - [Control System](#control-system)
-- [Running the Project](#Running the Project (Software Requirements))
-- [Running the Project](#Running the Project (Hardware Requirements))
+- [Running the Project](# Running the Project (Software Requirements))
+- [Running the Project](# Running the Project (Hardware Requirements))
   
 
 ## Overview
