@@ -5,7 +5,8 @@ This project implements a self-driving vehicle control system using a combinatio
 - [Demo](#Demo)
 - [Lane Detection](#lane-detection)
 - [Control System](#control-system)
-- [Running the Project](#running-the-project)
+- [Running the Project](#Running the Project (Software Requirements))
+- [Running the Project](#Running the Project (Hardware Requirements))
   
 
 ## Overview
@@ -38,7 +39,7 @@ The PID controller algorithm consists of three separate parameters: the proporti
 
 The controller also introduces the concept of "sleeping" the motors based on the PID output. If the PID output is too high, indicating a large error, the corresponding motor is stopped for a short period of time, effectively reducing its speed. This helps in correcting the vehicle's path.
 
-## Running the Project
+## Running the Project (Software Requirments)
 1. Compile the C++ module using pybind11.
 2. Pip install -r requirements.txt
 3. Run the `controller.py` script.
@@ -46,3 +47,22 @@ The controller also introduces the concept of "sleeping" the motors based on the
 For more information on the PID controller and tuning its parameters, please refer to the comments and documentation within `controller.py`.
 
 This project showcases the power of combining Python and C++ to handle different aspects of a problem, leveraging the strengths of both languages. C++ is used to efficiently process image data in real-time, and Python is used to simply and effectively control the vehicle based on the processed data.
+
+## Running the Project (Hardware Requirements)
+
+For this project, you will need the following hardware components:
+
+1. **Raspberry Pi:** The Raspberry Pi serves as the central control unit for the vehicle. It runs the main software and interfaces with the various hardware components. Ensure that your Raspberry Pi is set up with a suitable operating system (like Raspberry Pi OS) and has Python installed.
+
+2. **Raspberry Pi Camera:** This is a key component of the lane detection system. The camera continuously captures frames of the road, which are then processed to identify the lanes. Ensure that the camera is properly connected to the Raspberry Pi.
+
+3. **L298N Motor Driver:** The L298N Motor Driver is used to control the speed and direction of the vehicle's motors. It receives commands from the Raspberry Pi and drives the motors accordingly. Ensure that the L298N is correctly wired to the Raspberry Pi and the vehicle's motors.
+
+4. **Motors:** The vehicle requires motors to move. These motors are controlled by the L298N Motor Driver. The number and type of motors you need will depend on your specific vehicle setup.
+
+5. **Power Bank:** A portable power bank is used to power the Raspberry Pi. Choose a power bank that has enough capacity to power your Raspberry Pi for the duration of your project.
+
+6. **Jumper Wires:** Jumper wires are used to make the necessary electrical connections between the various components. You will need both male-to-female and male-to-male jumper wires for this project.
+
+Remember that working with hardware components and electrical circuits requires care and precision. Always make sure that your Raspberry Pi is powered off when you are connecting or disconnecting hardware components. And always verify your connections before powering on the Raspberry Pi.
+
