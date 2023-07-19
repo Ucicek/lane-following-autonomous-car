@@ -27,6 +27,10 @@ Here's a brief explanation of how the lane detection algorithm works:
 
 The lane detection module exposes a single function, `process_frame`, which can be imported and used in Python.
 
+
+https://github.com/Ucicek/autonomous_car/assets/77251886/0eb9cf70-939f-48f9-afff-4825edf3d65a
+
+
 ## Control System
 The control system is implemented in Python and consists of a PID (Proportional-Integral-Derivative) controller. The controller uses the lane error obtained from the lane detection module to adjust the speeds of the vehicle's left and right motors.
 
@@ -39,6 +43,14 @@ The PID controller algorithm consists of three separate parameters: the proporti
 - The **derivative** component is proportional to the rate of change of the error. If the error is rapidly changing, the derivative response will be large.
 
 The controller also introduces the concept of "sleeping" the motors based on the PID output. If the PID output is too high, indicating a large error, the corresponding motor is stopped for a short period of time, effectively reducing its speed. This helps in correcting the vehicle's path.
+
+**Demo Videos before tunning the PID** 
+
+
+[Video 1](https://github.com/Ucicek/autonomous_car/assets/77251886/b224acc3-1a3e-47cf-9f6f-27a4d97acc5d) - [Video 2](https://github.com/Ucicek/autonomous_car/assets/77251886/92929591-4b71-4de2-9d60-ccf0d3b67611)
+
+
+
 
 ## Running the Project - Software Requirements
 1. Compile the C++ module using pybind11.
