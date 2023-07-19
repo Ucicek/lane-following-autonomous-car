@@ -5,8 +5,8 @@ This project implements a self-driving vehicle control system using a combinatio
 - [Demo](#demo)
 - [Lane Detection](#lane-detection)
 - [Control System](#control-system)
-- [Running the Project (Software Requirements)](# running the Project (Software Requirements))
-- [Running the Project (Hardware Requirements)](# running the Project (Hardware Requirements))
+- [Running the Project - Software Requirements](#running-the-project---software-requirements)
+- [Running the Project - Hardware Requirements](#running-the-project---hardware-requirements)
   
 
 ## Overview
@@ -39,7 +39,7 @@ The PID controller algorithm consists of three separate parameters: the proporti
 
 The controller also introduces the concept of "sleeping" the motors based on the PID output. If the PID output is too high, indicating a large error, the corresponding motor is stopped for a short period of time, effectively reducing its speed. This helps in correcting the vehicle's path.
 
-## Running the Project (Software Requirments)
+## Running the Project - Software Requirements
 1. Compile the C++ module using pybind11.
 2. Pip install -r requirements.txt
 3. Run the `controller.py` script.
@@ -48,7 +48,7 @@ For more information on the PID controller and tuning its parameters, please ref
 
 This project showcases the power of combining Python and C++ to handle different aspects of a problem, leveraging the strengths of both languages. C++ is used to efficiently process image data in real-time, and Python is used to simply and effectively control the vehicle based on the processed data.
 
-## Running the Project (Hardware Requirements)
+## Running the Project - Hardware Requirements
 
 For this project, you will need the following hardware components:
 
