@@ -14,9 +14,11 @@ This project implements a self-driving vehicle control system using a combinatio
 
 C++ was chosen for the image processing part due to its speed and efficiency. In a real-time application such as this, where decisions need to be made quickly based on the detected lanes, the performance advantage of C++ is significant. The control system, on the other hand, doesn't need to process large amounts of data and doesn't require such high performance, so it's implemented in Python for its simplicity and ease of use.
 ## Demo
-<video controls="" width="800" height="500" muted="" loop="" autoplay="">
-<source src="https://github.com/Ucicek/autonomous_car/assets/77251886/7731b5e9-cb20-4a0c-9c6c-24793743c360" type="video/mp4">
-</video>
+
+
+https://github.com/Ucicek/lane-following-autonomous-car/assets/77251886/8bfddb1d-0525-4bfa-8b80-87a6ba41c310
+
+
 
 ## Lane Detection
 The lane detection algorithm is implemented in C++ using the OpenCV library and compiled into a Python extension using pybind11, allowing it to be imported and used in Python scripts.
@@ -31,8 +33,7 @@ Here's a brief explanation of how the lane detection algorithm works:
 The lane detection module exposes a single function, `process_frame`, which can be imported and used in Python.
 
 <video controls="" width="800" height="500" muted="" loop="" autoplay="">
-<source src="https://github.com/Ucicek/autonomous_car/assets/77251886/0eb9cf70-939f-48f9-afff-4825edf3d65a" type="video/mp4">
-</video>
+<source src="https://github.com/Ucicek/autonomous_car/assets/77251886/0eb9cf70-939f-48f9-afff-4825edf3d65a" type="video/mp4"> </video>
 
 
 
