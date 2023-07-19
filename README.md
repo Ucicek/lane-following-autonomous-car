@@ -2,15 +2,17 @@
 This project implements a self-driving vehicle control system using a combination of C++ and Python. The core of the system involves two primary parts: lane detection and a control system. The lane detection is performed using OpenCV in C++ for real-time image processing, and the control system is implemented in Python, using a PID controller. 
 ## Table of Contents
 - [Overview](#overview)
+- [Demo](#Demo)
 - [Lane Detection](#lane-detection)
 - [Control System](#control-system)
 - [Running the Project](#running-the-project)
+  
 
 ## Overview
 This project implements a self-driving vehicle control system using a combination of Python and C++. The core of the system involves two primary parts: lane detection and a control system. The lane detection is performed using OpenCV in C++ for real-time image processing, and the control system is implemented in Python, using a PID controller.
 
 C++ was chosen for the image processing part due to its speed and efficiency. In a real-time application such as this, where decisions need to be made quickly based on the detected lanes, the performance advantage of C++ is significant. The control system, on the other hand, doesn't need to process large amounts of data and doesn't require such high performance, so it's implemented in Python for its simplicity and ease of use.
-
+## Demo
 ## Lane Detection
 The lane detection algorithm is implemented in C++ using the OpenCV library and compiled into a Python extension using pybind11, allowing it to be imported and used in Python scripts.
 
