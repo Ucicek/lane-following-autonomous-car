@@ -14,7 +14,10 @@ This project implements a self-driving vehicle control system using a combinatio
 
 C++ was chosen for the image processing part due to its speed and efficiency. In a real-time application such as this, where decisions need to be made quickly based on the detected lanes, the performance advantage of C++ is significant. The control system, on the other hand, doesn't need to process large amounts of data and doesn't require such high performance, so it's implemented in Python for its simplicity and ease of use.
 ## Demo
-https://github.com/Ucicek/autonomous_car/assets/77251886/7731b5e9-cb20-4a0c-9c6c-24793743c360
+<video controls="" width="800" height="500" muted="" loop="" autoplay="">
+<source src="https://github.com/Ucicek/autonomous_car/assets/77251886/7731b5e9-cb20-4a0c-9c6c-24793743c360" type="video/mov">
+</video>
+
 ## Lane Detection
 The lane detection algorithm is implemented in C++ using the OpenCV library and compiled into a Python extension using pybind11, allowing it to be imported and used in Python scripts.
 
