@@ -20,7 +20,7 @@ The lane detection algorithm is implemented in C++ using the OpenCV library and 
 Here's a brief explanation of how the lane detection algorithm works:
 
 1. **Image Preprocessing**: The input to the function `process_frame` is a frame captured by the vehicle's camera. This frame is first resized to reduce computation. Several image transformations are applied, including color filtering (to isolate lane lines), grayscaling, Gaussian blurring (to reduce noise), and edge detection using the Canny algorithm.
-2. **Line Detection**: The Hough transform is used on the processed image to detect lines, which are presumed to be lane lines. The lines are then sorted by their y-coordinates and only the top 10 longest lines are retained for further processing.
+2. **Line Detection**: The Hough transform is used on the processed image to detect lines, which are presumed to be lane lines. The lines are then sorted by their y-coordinates and only the top 10 longest lines are retained to account for curves.
 3. **Lane Splitting**: The lines are split into right and left lanes based on their slopes. The slopes and intercepts of the lane lines are computed and used to calculate the midpoint at the bottom of the image.
 4. **Error and Curve Determination**: The horizontal distance of this midpoint from the center of the image is calculated and returned as the lane error. Also, the function determines if there's a curve ahead based on the slopes of the lane lines.
 
