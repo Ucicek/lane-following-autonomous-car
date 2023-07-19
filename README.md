@@ -77,5 +77,5 @@ For this project, you will need the following hardware components:
 
 6. **Jumper Wires:** Jumper wires are used to make the necessary electrical connections between the various components. You will need both male-to-female and male-to-male jumper wires for this project.
 
-Remember that working with hardware components and electrical circuits requires care and precision. Always make sure that your Raspberry Pi is powered off when you are connecting or disconnecting hardware components. And always verify your connections before powering on the Raspberry Pi.
+
 
