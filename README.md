@@ -52,7 +52,8 @@ The controller also introduces the concept of "sleeping" the motors based on the
 **Demo Videos before tunning the PID** 
 
 
-[Video 1](https://github.com/Ucicek/autonomous_car/assets/77251886/b224acc3-1a3e-47cf-9f6f-27a4d97acc5d) - [Video 2](https://github.com/Ucicek/autonomous_car/assets/77251886/92929591-4b71-4de2-9d60-ccf0d3b67611)
+https://github.com/Ucicek/autonomous_car/assets/77251886/b224acc3-1a3e-47cf-9f6f-27a4d97acc5d
+https://github.com/Ucicek/autonomous_car/assets/77251886/92929591-4b71-4de2-9d60-ccf0d3b67611
 
 
 
