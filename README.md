@@ -32,7 +32,7 @@ Here's a brief explanation of how the lane detection algorithm works:
 
 The lane detection module exposes a single function, `process_frame`, which can be imported and used in Python.
 
-https://github.com/Ucicek/autonomous_car/assets/77251886/0eb9cf70-939f-48f9-afff-4825edf3d65a"
+https://github.com/Ucicek/autonomous_car/assets/77251886/0eb9cf70-939f-48f9-afff-4825edf3d65a
 
 
 
