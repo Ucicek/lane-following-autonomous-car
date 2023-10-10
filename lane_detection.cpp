@@ -52,14 +52,14 @@ std::pair<double, bool> process_frame(py::array_t<unsigned char> input_array) {
     std::sort(rightLane.begin(), rightLane.end(), [](const cv::Vec4i &a, const cv::Vec4i &b){ 
         return std::max(a[1], a[3]) > std::max(b[1], b[3]); 
     });
-    rightLane.resize(1); // Keep only the first line
+    rightLane.resize(2); // Keep only the first line
 
 
         // Sorting and trimming the left lane lines
     std::sort(leftLane.begin(), leftLane.end(), [](const cv::Vec4i &a, const cv::Vec4i &b){ 
         return std::max(a[1], a[3]) > std::max(b[1], b[3]); 
     });
-    leftLane.resize(1); // Keep only the first line
+    leftLane.resize(2); // Keep only the first line
 
     std::vector<cv::Point> rightPoints = convertLinesToPoints(rightLane);
     std::vector<cv::Point> leftPoints = convertLinesToPoints(leftLane);
