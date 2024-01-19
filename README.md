@@ -90,5 +90,7 @@ For this project, you will need the following hardware components:
 
 6. **Jumper Wires:** Jumper wires are used to make the necessary electrical connections between the various components. You will need both male-to-female and male-to-male jumper wires for this project.
 
+## Next Steps
 
+Adding a distance sensor to stop when it comes across obstacles.
 
